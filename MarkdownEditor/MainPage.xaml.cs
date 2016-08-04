@@ -26,5 +26,10 @@ namespace MarkdownEditor
         {
             this.InitializeComponent();
         }
+
+        private void TextEditorBox_OnTextChanged(object sender, TextChangedEventArgs e)
+        {
+            MarkdownTextBlock.Markdown = TextEditorBox.Text;
+        }
     }
 }
